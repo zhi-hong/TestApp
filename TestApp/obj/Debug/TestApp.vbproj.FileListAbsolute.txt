@@ -1,0 +1,16 @@
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\bin\Debug\TestApp.exe.config
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\bin\Debug\TestApp.exe
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\bin\Debug\TestApp.pdb
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\bin\Debug\TestApp.xml
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.vbprojResolveAssemblyReference.cache
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\MainWindow.g.vb
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\Application.g.vb
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp_MarkupCompile.cache
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp_MarkupCompile.lref
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\MainWindow.baml
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.g.resources
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.Resources.resources
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.vbproj.GenerateResource.Cache
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.exe
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.xml
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.pdb
