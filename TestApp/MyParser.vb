@@ -2,7 +2,6 @@
 Imports System.Text
 Imports System.Xml
 
-
 Public Structure Component
     Public Name As String
     Public CAS As String
@@ -23,7 +22,9 @@ Public Structure PropPack
     Public ComponentList As ComponentList
 End Structure
 
+
 Public Class MyParser
+
     'members
     Public ComponentLists(0) As ComponentList
 
@@ -32,8 +33,11 @@ Public Class MyParser
     End Sub
 
     Public Sub ReadXML()
+
+
+
         Dim output As StringBuilder = New StringBuilder()
-        'Dim myelement As XmlElement
+        Dim myelement As XmlElement
         Dim testbool As Boolean
 
         Dim subtree As XmlReader
@@ -43,18 +47,24 @@ Public Class MyParser
 
         Dim reader As XmlReader = XmlReader.Create("XMLFile1.xml")
 
+
         'reader.WhitespaceHandling = WhitespaceHandling.None
-        reader.ReadToFollowing("ComponentLists")
-        subtree = reader.ReadSubtree
+        reader.ReadToFollowing("ComponentList")
+
+
+
+        subtree = reader.ReadSubtree()
+
+        _getcomponentlists(subtree, ComponentLists(0))
 
         testbool = reader.ReadToDescendant("ComponentList")
-        Do
+        'Do
 
-            subtree = reader.ReadSubtree
-            _getcomponentlists(subtree, ComponentLists(0))
-        Loop Until reader.ReadToFollowing("ReadToFollowing") = False
+        '    subtree = reader.ReadSubtree
+        '    _getcomponentlists(subtree, ComponentLists(0))
+        'Loop Until reader.ReadToFollowing("ReadToFollowing") = False
 
-        reader.Read()
+        'reader.Read()
 
 
 
