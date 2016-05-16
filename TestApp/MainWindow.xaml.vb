@@ -70,8 +70,8 @@ Class MainWindow
     End Sub
     Private Sub MainWindow_Loaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
         '   MessageBox.Show(String.Format("I'm loading"))
-        Parser = New MyParser
-        Parser.ReadXML()
+        'Parser = New MyParser
+        'Parser.ReadXML()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As RoutedEventArgs)

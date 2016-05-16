@@ -84,11 +84,31 @@ Public Class MyParser
 
     Private Sub _getcomponentlists(reader As XmlReader, complist As ComponentList)
         Dim comptree As String
+        Dim node As XmlNode
+
+
+        comptree = ""
 
         reader.ReadToDescendant("ComponentListName")
         reader.ReadToDescendant("Value")
         complist.Name = reader.ReadElementContentAsString()
-        'Do
+
+        If (reader.ReadToFollowing("Component")) Then
+            Do
+                ' node = reader.ReadElementContentAs(Xml.XmlNode, IXmlNamespaceResolver.ToString)
+
+
+                reader.ReadToDescendant("ComponentName")
+                reader.ReadToDescendant("Value")
+                comptree = comptree & reader.ReadElementContentAsString()
+                reader.ReadToFollowing("/Component")
+            Loop While reader.ReadToNextSibling("Component")
+        End If
+
+
+
+
+        'complist.Components(0).Name = reader.ReadElementContentAsString()
         '    reader.ReadToDescendant("Component")
 
         'Loop

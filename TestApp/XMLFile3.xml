@@ -1,0 +1,12 @@
+﻿<Interfaces>
+  <Interface>
+    <InterfaceCode>987</InterfaceCode>
+    <AccessID>asdf</AccessID>
+    <Password>654321</Password>
+  </Interface>
+  <Interface>
+    <InterfaceCode>789</InterfaceCode>
+    <AccessID>      </AccessID>
+    <Password>      </Password>
+  </Interface>
+</Interfaces>

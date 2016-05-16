@@ -11,5 +11,5 @@
 Option Strict Off
 Option Explicit On
 
-<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("vmg.ico")> 
+<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("xmlfile3.xml")> 
 

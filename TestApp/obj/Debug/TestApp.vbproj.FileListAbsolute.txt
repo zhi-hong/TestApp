@@ -14,3 +14,4 @@ D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.vbproj.G
 D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.exe
 D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.xml
 D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp.pdb
+D:\East101\Adri\001_Convert_HYSYS_VMG\TestApp\TestApp\obj\Debug\TestApp_Content.g.vb
