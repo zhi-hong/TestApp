@@ -1,0 +1,2762 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CaseDefinition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CaseDescription">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DocumentType" type="xs:string" />
+              <xs:element name="XmlRecallVersion" type="xs:decimal" />
+              <xs:element name="CaseAuthor" type="xs:string" />
+              <xs:element name="BuildNumber" type="xs:unsignedShort" />
+              <xs:element name="HscFileRevision" type="xs:unsignedShort" />
+              <xs:element name="CaseName" type="xs:string" />
+              <xs:element name="CaseMode" type="xs:string" />
+              <xs:element name="GenerationDate" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UserVarDatabase" type="xs:string" />
+        <xs:element name="Basis">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ComponentLists">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="ComponentList">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ComponentListType">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ComponentListName">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Components">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="Component">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ComponentName">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ComponentFormula">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ComponentType">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ApropCompType">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:unsignedByte" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ReactionPackage">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ReactionList">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="NumberOfReactions">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ReactionSetList">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="NumberOfReactionSets">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ChemistrySetList">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="NumberOfChemistrySets">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FluidPackages">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="FluidPackage">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FluidPackageName">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="FluidPackageType">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ComponentList">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="FluidPackageData">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PropertyPackage">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PropPackage">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="FPSetup">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="EOSEnthalpyMethodSpecs">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Value" type="xs:string" />
+                                                  <xs:element name="ValueName" type="xs:string" />
+                                                  <xs:element name="ValueType" type="xs:string" />
+                                                  <xs:element name="Status" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                <xs:attribute name="Type" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="BinaryCoefficients">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Aij">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="unbounded" name="Column">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="Component">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:string" />
+                                                              <xs:element name="ValueName" type="xs:string" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="n-C12">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:decimal" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="n-C13">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:double" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="n-C14">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:double" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="n-C15">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:float" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="n-C16">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:float" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="Methane">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:decimal" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="Ethane">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:decimal" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="Propane">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:decimal" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="i-Butane">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:double" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="n-Butane">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:double" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="i-Pentane">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:float" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="n-Pentane">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:float" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element minOccurs="0" name="n-Hexane">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Value" type="xs:decimal" />
+                                                              <xs:element name="ValueType" type="xs:string" />
+                                                              <xs:element name="Status" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                            <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                            <xs:attribute name="Type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                      <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                      <xs:attribute name="Type" type="xs:string" use="required" />
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                <xs:attribute name="Type" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="StabTestData">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element maxOccurs="unbounded" name="StabTestItem">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="DensityCalculationOption">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:unsignedByte" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="SurfaceTensionCalculationOption">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:unsignedByte" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ThermalConductOption">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:unsignedByte" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="TreatmentofInteractionCoefficients">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="UseEOSLiquidDensity">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="SmoothLiquidDensity">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ModifyH2CriticalProperties">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="UseWaterGasKij">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="PhaseIdentification">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="DenseTuningOptions">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="DenseTuningValue">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:unsignedByte" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="EOSRootSearchOptions">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="HysysOptions">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="DensityOptions">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ModifyTcAndPcOptions">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="UseWaterGasKijMatrix">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ViscosityOptions">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="DefaultOptions">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="CostalOptions">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="PrPkgOptionsMatrix">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:unsignedByte" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="GlycolVaporEnthalpySelection">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="GlycolEnthalpySelection">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="EstimationMethod">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="TryIOFlashFirst">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="UseMultiPhaseFlash">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="FPStabilityTest">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PhasesToInitiateTest">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Deleted">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Value" type="xs:string" />
+                                                  <xs:element name="ValueName" type="xs:string" />
+                                                  <xs:element name="ValueType" type="xs:string" />
+                                                  <xs:element name="Status" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                <xs:attribute name="Type" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="AverageOfExisting">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Value" type="xs:string" />
+                                                  <xs:element name="ValueName" type="xs:string" />
+                                                  <xs:element name="ValueType" type="xs:string" />
+                                                  <xs:element name="Status" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                <xs:attribute name="Type" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="IdealGas">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Value" type="xs:string" />
+                                                  <xs:element name="ValueName" type="xs:string" />
+                                                  <xs:element name="ValueType" type="xs:string" />
+                                                  <xs:element name="Status" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                <xs:attribute name="Type" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="WilsonsEquation">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Value" type="xs:string" />
+                                                  <xs:element name="ValueName" type="xs:string" />
+                                                  <xs:element name="ValueType" type="xs:string" />
+                                                  <xs:element name="Status" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                                <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                                <xs:attribute name="Type" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="MaximumStagesAllowed">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:unsignedByte" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="StabilityTestMethod">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="CompsToInitiateTest">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element maxOccurs="unbounded" name="Set">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Component" type="xs:string" />
+                                                  <xs:element name="Initiator" type="xs:unsignedByte" />
+                                                </xs:sequence>
+                                                <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="FPPhaseOrder">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PhaseSortMethod">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Value" type="xs:string" />
+                                            <xs:element name="ValueName" type="xs:string" />
+                                            <xs:element name="ValueType" type="xs:string" />
+                                            <xs:element name="Status" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                          <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                          <xs:attribute name="Type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="AqueousPhaseCriteria">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="afamGUID">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashValidPhases">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashConvAlgorithm">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashDiagnostics">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashMaxIterations">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:unsignedByte" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashIterationTol">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:decimal" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashLowerTempLimit">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:decimal" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashUpperTempLimit">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:decimal" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashLowerPresLimit">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:unsignedByte" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="APFlashUpperPresLimit">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:unsignedInt" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ComponentMapCollections">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="ComponentMapping">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FromBasis">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ToBasis">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ComponentMap">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Name">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="OnlyShowSpecs">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Transpose">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="UnlockAllComponents">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="TransferLikeHypotheticals">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="TransferHypotheticalsByNBP">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="TransferBasis">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DefaultFluidPackage">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Value" type="xs:string" />
+                    <xs:element name="ValueName" type="xs:string" />
+                    <xs:element name="ValueType" type="xs:string" />
+                    <xs:element name="Status" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FlowSheets">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FlowSheet">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="xs:string" />
+                    <xs:element name="TaggedName" type="xs:string" />
+                    <xs:element name="Type" type="xs:string" />
+                    <xs:element name="FluidPackage" type="xs:string" />
+                    <xs:element name="Objects">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Object">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Name" type="xs:unsignedByte" />
+                                <xs:element name="TaggedName" type="xs:unsignedByte" />
+                                <xs:element name="Type" type="xs:string" />
+                                <xs:element name="IsSolved" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FlowSheetObjects">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="MaterialStreamObject">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="xs:unsignedByte" />
+                    <xs:element name="TaggedName" type="xs:unsignedByte" />
+                    <xs:element name="Type" type="xs:string" />
+                    <xs:element name="IsSolved" type="xs:string" />
+                    <xs:element name="MaterialStreamObjectParams">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FluidPackage">
+                            <xs:complexType mixed="true">
+                              <xs:sequence minOccurs="0">
+                                <xs:element name="FluidPackage">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Status">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Temperature">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="UtilityTag">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="myUtilityTagStatus">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:unsignedByte" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Pressure">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:decimal" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ControlValve">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                  <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="Type" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="FlowSpec">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="PressureSpec">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="FlowTypeSpec">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="CompSpecType">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="NormalizationStatus">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="CompBasisType">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="NumberComp">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="dynPressureSpec">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="dynFlowSpec">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="dynPSpecUseVariableStatus">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="dynFSpecUseVariableStatus">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="dynFlowSpecType">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="valuesAreOwnDynInitialEstimate">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="wasCreatedInDynamics">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="OldOilModState">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="CostBasedFlow">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CostBasis">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:unsignedByte" />
+                                      <xs:element name="ValueName" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="NormalizedYields">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="RefStreamFlowBasis">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:unsignedByte" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="CurStreamFlowBasis">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:unsignedByte" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                      <xs:element name="Status" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="AmineCompNum">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="HSSIonCompNum">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:unsignedByte" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CaseProperties">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CaseFlowShtName">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Value" type="xs:string" />
+                    <xs:element name="ValueName" type="xs:string" />
+                    <xs:element name="ValueType" type="xs:string" />
+                    <xs:element name="Status" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Integrator">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="IntegrationControl">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="IntegrationTimeUnits">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CurrentTime">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Acceleration">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="RealTime">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="NumberOfTimeStepsToExecute">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="DisplayInterval">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="IntegrationStepUnits">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="StepSize">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:decimal" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Maximum">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PressureFlowSolver">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ControlAndLogicalOps">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="EnergyCalculations">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CompositionsAndFlashCalculations">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UserRealTimeFactor">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UseTheseDefaultPeriodForAllOperations">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="StaticHeadContributions">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ImplicitStaticHeadCalcs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UseHeatLossesWhereAvailable">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="RigorousNonEquilibriumMixedProp">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="SimultaneousSolveHXEqsWithIOFlash">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ModelChokingOfLiqInValve">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UseImplicitCheckValveModel">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="TruncateLargeVolIntegrationErrors">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ReduceRecycleEffForSmallDt">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CloseCompMatAndEnergyBals">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="LimitRecycleFlowRate">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="NeedToResetOnStartUp">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UseHYSYS.Plant">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ModelLiquidValveChoking">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="DefaultAmbientTemperature">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="SkipFlashFlag">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="SkipFlashFlowRateValue">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:float" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CorrelationManager">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CurrentlySelectedStreamCorrSetIndex">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="GlobalStreamCorrSetIsActive">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="GlobalStreamCorrSetModStatus">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="ActiveStreamCorrelations">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ActiveStreamCorrName">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ActiveStreamCorrDispName">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="ActiveStreamCorrCLSID">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ActiveStreamCorrVarDesc">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ActiveStreamCorrImplSubst">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ActiveStreamCorrStatus">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ActiveStreamCorrInUse">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ActiveStreamCorrIsBulkProp">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ActiveStreamCorrIsClone">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CurrentlySelectedUnitOpCorrSetIndex">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="GlobalUnitOpCorrSetIsActive">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="GlobalUnitOpCorrSetModStatus">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SimulationAdjustManager">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SimulationAdjustManager">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CalculationType">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ConvergenceType">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="StepFraction">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ConvergenceNorm">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:decimal" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PerturbationFactor">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:decimal" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="MaximumIteration">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FluidPkgOwners">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="FluidPkgOwner">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="FluidPkgOwner">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueName" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                                <xs:element name="Status" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CostingOptions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CostingTemplateFileName">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="myCostingScenarioName">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueName" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="myStartMonth">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="myStartDay">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="myStartYear">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="myOpLife">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedInt" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="myStartLength">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="myOperYear">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedInt" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="myCarbonFee">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:unsignedByte" />
+                          <xs:element name="ValueType" type="xs:string" />
+                          <xs:element name="Status" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PSVEnvironment">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                      <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                      <xs:attribute name="Type" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PFDs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PFDSForFlowSheet">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="FlowSheetName">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" type="xs:string" />
+                          <xs:element name="ValueType" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PFD">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PFDName">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Value" type="xs:string" />
+                                <xs:element name="ValueType" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element maxOccurs="unbounded" name="FSO">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FSOName">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:unsignedByte" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="IsStream">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Icon">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="X">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:decimal" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Y">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:decimal" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="UserPositioned">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:string" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="LabelX">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:decimal" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="LabelY">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Value" type="xs:byte" />
+                                      <xs:element name="ValueType" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                                    <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                                    <xs:attribute name="Type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                              <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                        <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="OwnerType" type="xs:string" use="required" />
+                  <xs:attribute name="OwnerName" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
